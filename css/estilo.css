@@ -166,6 +166,7 @@ a {
   text-align: center;
   font-family: font-family 'Bebas Neue', cursive;
   font-weight: 400;
+  text-shadow: 3px 3px rgba(255, 196, 0, 0.521);
 }
 @media only screen and (max-width: 770px) {
   .header-texto h1 {
@@ -307,33 +308,4 @@ footer {
     margin: auto;
     font-size: 2.5rem;
   }
-}
-/*ENCOMENDAS*/
-.banner {
-  background-size: cover;
-  width: 100%;
-  height: 30vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-.header-texto-produtos {
-  padding: 1px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 400;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.432);
-}
-.banner-citricos {
-  background: url(../img/produtos/citricus.jpg) no-repeat center;
-  background-size: cover;
-}
-.banner-laticinios {
-  background: url(../img/produtos/laticinios.jpg) no-repeat center;
-  background-size: cover;
-}
-.banner-sazonais {
-  background: url(../img/produtos/sazonais.jpg) no-repeat center;
-  background-size: cover;
 }
