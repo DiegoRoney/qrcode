@@ -1,117 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="images/" rel="shortcut icon" type="image/x-icon" />
 
-    <link rel="stylesheet/less" type="text/css" href="less/estilo.less" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/icons8-código-qr-64.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="stylesheet/less" type="text/css" href="css/estilo.less" />
     <!--Less-->
-    <script src="js/responsive-nav.js"></script>
 
-    <title>Gerador de QR Code</title>
-  </head>
 
-  <body>
-    <header>
-      <a href="#home" class="logo" data-scroll>QR CODE</a>
-      <nav class="nav-collapse">
-        <ul>
-          <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
-          <li class="menu-item"><a href="#about" data-scroll>Sobre</a></li>          
-        </ul>
-      </nav>
+    <title>Gerador QRcode</title>
+</head>
+
+<body>
+   
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"> <img src="img/icons8-código-qr-64.png" > QR Code </a>
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+
+                    <a href="index.html" class="nav-link">
+                        <h2>Home</h2>
+                    </a>
+                </li>                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <h2>Sobre</h2>
+                    </a>
+                </li>               
+
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
-    <section id="home">
-      <div class="home-principal">
-        
-        <img src="img/img.jpg" alt="">
-      </div>
 
-      <div class="home-secundario">
-       
+    <div class="header-section ">
 
-        
-            
+        <!-- banner principal -->
+        <div class="header-texto">
+            <h1>Q R</h1>
+            <h2>Gerador de QRcode</h2>
+            <br>
+            <br>
+        </div>
+
+
+        <!-- QR -->
+        <div class="jumbotron jumbotron-fluid">
+
           
-            <div class="form-horizontal">
-              <div class="form-group">
-                <label class="control-label col-sm-2"
-                  for="content">
-                 Gerador de QR Code
-                </label>
-                <div class="col-sm-10">
-          
-                  <!-- Input box to enter the 
-                      required data -->
-                  <input type="text" size="60" 
-                    maxlength="60" class="form-control"
-                    id="content" placeholder="Cole o link aqui" />
+                <div class="form-horizontal">
+                  <div class="form-group">
+                    <label class=""
+                      for="content">
+                     Cole o link e clique em gerar!
+                    </label>
+                    <div class="">
+              
+                      <!-- Input box to enter the 
+                          required data -->
+                      <input type="text" size="60" 
+                        maxlength="60" class="form-control"
+                        id="content" placeholder="Cole o link aqui" />
+                    </div>
+                  </div>
+
+                  <div class="form-group1">
+                    <div class="">              
+                      
+                      <button type="btn" class=
+                        "btn btn-default" id="generate">
+                        Gerar
+                      </button>
+                     
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-          
-                  <!-- Button to generate QR Code for
-                   the entered data -->
-                  <button type="button" class=
-                    "btn btn-default" id="generate">
-                    Gerar
-                  </button>
+    
+                <div class="text-center"> <!--- editar  -->
+              
+                  <img src=
+                    "img/qr-code-scan-hand.png"
+                    class="qr-code img-thumbnail img-responsive" />
                 </div>
-              </div>
-            </div>
-
-            <div class="text-center"> <!--- editar  -->
-          
-              <!-- Get a Placeholder image initially,
-               this will change according to the
-               data entered later -->
-              <img src=
-                "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
-                class="qr-code img-thumbnail img-responsive" />
-            </div>
-         
+                
+             
+                
             
-        
-      </div>
-    </section>
+          </div>
+            
+        </div>
+        <!-- QR -->
 
-    <section id="about">
-      <h1>Sobre</h1>
-    </section>
+    </div>
 
+    
+    <footer class="fixar-rodape">
+        <a href="https://diegoroney.github.io/portfolio/" class="footer-link">© 2022 Copyright: DIEGOR</a>
 
-    <footer class="footer">
-      <a href="https://diegoroney.github.io/portfolio/"
-        >© 2022 Copyright: DIEGOR</a
-      >
     </footer>
 
-    <!--- less -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+        <script src="js/qrcode.js"></script>
+
+        <!--- less -->
     <script>
-      less = {
-        env: "development", //production
-      };
-    </script>
-    <script src="less.js" data-env="development"></script>
-    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-    <!--- less js -->
-
-    <!--- js -->
+        less = {
+          env: "development", //production
+        };
+      </script>
+      <script src="less.js" data-env="development"></script>
+      <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+      <!--- less js -->
+      <!--- js -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script> <!-- jquery -->
+</body>
+<script src="js/navbar.js"></script>
+<script type="text/javascript" src="js/confirmacao.js"></script>
 
-
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-
-
-    <script src= "https://code.jquery.com/jquery-3.5.1.js"> </script>
-    <script src="js/qrcode.js"></script>
-  
- 
-  </body>
 </html>
