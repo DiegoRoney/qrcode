@@ -202,7 +202,7 @@ a {
     color: @twitch-5-hex;
 }
 .header-texto {   
-    margin-top: 45px;
+    
     padding: 25px;
     color: @twitch-1-hex;  
     text-align: center;
@@ -211,6 +211,9 @@ a {
    text-shadow: 3px 3px rgba(255, 196, 0, 0.521);
 }
 @media only screen and (max-width: 770px) {
+    .header-texto {
+        margin-top: 145px;
+    }
     .header-texto h1 {
       font-size: 120px;
     }
@@ -219,6 +222,10 @@ a {
     }
     .info{
         padding: 25px; 
+        font-size: 18px;
+    }
+    footer{
+       margin-top: 100px;
         font-size: 18px;
     }
 
@@ -265,7 +272,7 @@ a {
 
 /*footer*/
 footer {
-    font-family: 'Signika', sans-serif;
+    font-family: @fonte1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +292,8 @@ footer {
 
 
 .footer-link {
-    z-index: 500;
+    font-family: @fonte1;
+    //z-index: 500;
     font-size: 12px;
     color: @twitch-6-hex;
     text-decoration: none;
@@ -294,7 +302,7 @@ footer {
     transition: .5s;
 }
 .footer-link:hover {
-    color: @twitch-6-hex;
+    color: @twitch-7-hex;
 }
 /*footer*/
 
