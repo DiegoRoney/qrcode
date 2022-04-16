@@ -169,15 +169,14 @@ a {
          width: 100%;
     }
     
+    
 }
 /* NAVBAR*/
 
 /* HOME */
-.header-section {
-    /*pegar toda a tela*/    
+.header-section {    
     width: 100%;
-    height: 100vh;
-    /*deixar a imagem aqui*/
+    height: 100vh;    
     background: url(../img/white.jpg) no-repeat center; 
     background-color: @twitch-4-hex;    
     background-size: cover;
@@ -186,21 +185,20 @@ a {
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 30px;
-        
+    gap: 30px;  
 }
+
 .jumbotron {
     padding: 15px;
     background-color: @twitch-4-hex; 
     color: @twitch-7-hex;
     font-size: 14px;
-    width: 450px;
+    width: 550px;
     font-family: @fonte2;
-    
+    margin: 1px;
+   
 }
-.form-horizontal{
-    margin: 10px;
-}
+
 .lead{
     font-size: 1.6rem;
     font-weight: 500;
@@ -226,15 +224,9 @@ a {
     .header-texto h2{
         font-size: 40px;
     }
-    .info{
-        margin-top: 15px;
-        padding: 25px; 
-        
-               
-    }
-   
-
+  
 }
+
 @media only screen and (min-width: 928px) {
     .header-texto h1 {
       font-size: 200px;
@@ -273,18 +265,21 @@ a {
    
 }
 /*info*/
+
 .info{
-    padding: 35px; 
+       
+    padding: 18px;     
     font-size: 18px;
     background-color: @twitch-1-hex;
-    color: @twitch-7-hex;
-    display: block;
+    color: @twitch-7-hex;    
     width: 100%;
-    //height: 100vh;
-    margin-top: 50px;
+    height: 100vh;
+   
+    
 }
 
-.info h2{
+.titulo2{
+    margin-top: 50px;
     font-size: 30px;
     font-weight: 800;
     color: @twitch-6-hex;
@@ -386,11 +381,7 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-    .info-encomendas{
-        width: 100%;
-        height: 100%;
-        
-    }
+    
     .ec-pricipal{
         width: 40%;
         height: fit-content;

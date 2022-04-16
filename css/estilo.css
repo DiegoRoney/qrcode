@@ -140,10 +140,8 @@ a {
 /* NAVBAR*/
 /* HOME */
 .header-section {
-  /*pegar toda a tela*/
   width: 100%;
   height: 100vh;
-  /*deixar a imagem aqui*/
   background: url(../img/white.jpg) no-repeat center;
   background-color: #6000a0;
   background-size: cover;
@@ -159,11 +157,9 @@ a {
   background-color: #6000a0;
   color: #FFFF;
   font-size: 14px;
-  width: 450px;
+  width: 550px;
   font-family: font-family 'Anton', sans-serif;
-}
-.form-horizontal {
-  margin: 10px;
+  margin: 1px;
 }
 .lead {
   font-size: 1.6rem;
@@ -189,10 +185,6 @@ a {
   }
   .header-texto h2 {
     font-size: 40px;
-  }
-  .info {
-    margin-top: 15px;
-    padding: 25px;
   }
 }
 @media only screen and (min-width: 928px) {
@@ -227,15 +219,15 @@ a {
 }
 /*info*/
 .info {
-  padding: 35px;
+  padding: 18px;
   font-size: 18px;
   background-color: #140a30;
   color: #FFFF;
-  display: block;
   width: 100%;
-  margin-top: 50px;
+  height: 100vh;
 }
-.info h2 {
+.titulo2 {
+  margin-top: 50px;
   font-size: 30px;
   font-weight: 800;
   color: #FFCD00;
@@ -323,10 +315,6 @@ footer {
   }
 }
 @media screen and (min-width: 1000px) {
-  .info-encomendas {
-    width: 100%;
-    height: 100%;
-  }
   .ec-pricipal {
     width: 40%;
     height: fit-content;
