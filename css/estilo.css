@@ -219,12 +219,15 @@ a {
 }
 /*info*/
 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 18px;
   font-size: 18px;
   background-color: #140a30;
   color: #FFFF;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .titulo2 {
   margin-top: 50px;
