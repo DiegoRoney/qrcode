@@ -230,6 +230,8 @@ a {
   height: 100%;
 }
 .titulo2 {
+  height: 50px;
+  background: #140a30;
   margin-top: 50px;
   font-size: 30px;
   font-weight: 800;
