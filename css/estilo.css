@@ -231,6 +231,8 @@ a {
 }
 .titulo2 {
   height: 50px;
+  width: 100%;
+  padding: 18px;
   background: #140a30;
   margin-top: 50px;
   font-size: 30px;
