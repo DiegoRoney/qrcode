@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/anton/v22/1Ptgg87LROyAm0K0.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/anton/v23/1Ptgg87LROyAm0K0.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bebasneue/v8/JTUSjIg69CK48gW7PXooxW4.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXooxW4.ttf) format('truetype');
 }
 /*
 font-family: 'Bebas Neue', cursive;
@@ -197,10 +197,10 @@ a {
 }
 .form-control {
   color: #6000a0;
-  font-size: 12px;
+  font-size: 15px;
   font-family: font-family Arial, Helvetica, sans-serif;
   font-weight: 800;
-  height: 25px;
+  height: 35px;
 }
 .btn {
   width: 100%;
