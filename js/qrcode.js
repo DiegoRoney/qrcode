@@ -19,3 +19,5 @@
           $('.qr-code').attr('src', finalURL);
         });
       });
+
+      alert("Eu sou um alert!");

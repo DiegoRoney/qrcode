@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <title>Gerador QRcode</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/" />
+    <link rel="icon" href="img/icons8-código-qr-64.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    
+    <link rel="stylesheet/less" type="text/css" href="css/estilo.less" />
+</head>
+
+<body>
+    <main>
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                    </ul>
+
+                    <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form> -->
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2">
+                            Login
+                        </button>
+                        <button type="button" class="btn btn-warning">Sign-up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+
+                    <img src= "img/qr-code-scan-hand.png"
+                     class="qr-code img-thumbnail img-responsive" />
+                    <!-- <img src="img/laranja.png" class="d-block mx-lg-auto img-fluid" alt="QR CODE" width="700"
+                        height="500" loading="lazy" /> -->
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">QR Code</h1>
+                    <!-- <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, enim
+                        doloribus officia quisquam ducimus.
+                    </p> -->
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="entrada" for="content">
+                                <p>1. Cole o link e clique em <strong>Criar</strong>!</p>
+                                <p>2. Clique com botão esquerdo do mouse sobre o QRcode</p>
+                                <p>3. Selecione: <strong>Salvar imagem como</strong></p>
+                                
+        
+                            </label>
+                            <div class="">
+                    
+                            <input type="text" size="60" 
+                                maxlength="60" class="form-control"
+                                id="content" placeholder="Cole o link aqui" />
+                            </div>
+                        </div>
+        
+                        <div class="form-group1">
+                            <div class="">              
+                            
+                            <!-- <button type="btn" class=
+                                "btn btn-default" id="generate">
+                                Criar
+                            </button> -->
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+
+                        <button type="button" id="generate" class="btn-lg btn btn-outline-light me-2">
+                            Gerar
+                        </button>
+
+                        <button  type="button" class="btn btn-lg btn-warning">
+                            Default
+                        </button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+    </main>
+
+    
+
+    <script>
+        less = {
+          env: "development", //production
+        };
+      </script>
+      <script src="less.js" data-env="development"></script>
+      <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+      <!--- less js -->
+
+      <script src="js/qrcode.js"></script>
+</body>
+ 
+</html>
