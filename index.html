@@ -1,174 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" href="img/icons8-código-qr-64.png">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    
-
-    <link rel="stylesheet/less" type="text/css" href="css/estilo.less" />
-    <!--Less-->
-
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <title>Gerador QRcode</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/" />
+    <link rel="icon" href="img/icons8-código-qr-64.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    
+    <link rel="stylesheet/less" type="text/css" href="css/estilo.less" />
 </head>
 
 <body>
-   
-
-    <header class="header">
-        <nav class="navbar">
-            <a href="index.html" class="nav-logo"> <img src="img/icons8-código-qr.gif" > QR Code </a>
-            <ul class="nav-menu">
-
-                <li class="nav-item">
-
-                    <a href="index.html" class="nav-link">
-                        <h2>Home</h2>
+    <main>
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
                     </a>
-                </li>                
-                <li class="nav-item">
-                    <a href="#info" class="nav-link">
-                        <h2>Sobre</h2>
-                    </a>
-                </li>               
 
-            </ul>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                    </ul>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
+                    <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form> -->
 
-
-    <div class="header-section">
-
-        <!-- banner principal -->
-        <div class="header-texto">
-            <h1>QR</h1>
-            <h2>Gerador de QRcode</h2>
-            
-        </div>
-
-
-        <!-- QR -->
-        <div class="jumbotron"> <!--- jumbotron-fluid -->
-
-            <div class="form-horizontal">
-                <div class="form-group">
-                    <label class="entrada" for="content">
-                        <p>1. Cole o link e clique em <strong>Criar</strong>!</p>
-                        <p>2. Clique com botão esquerdo do mouse sobre o QRcode</p>
-                        <p>3. Selecione: <strong>Salvar imagem como</strong></p>
-                        
-
-                    </label>
-                    <div class="">
-            
-                    <input type="text" size="60" 
-                        maxlength="60" class="form-control"
-                        id="content" placeholder="Cole o link aqui" />
-                    </div>
-                </div>
-
-                <div class="form-group1">
-                    <div class="">              
-                    
-                    <button type="btn" class=
-                        "btn btn-default" id="generate">
-                        Criar
-                    </button>
-                    
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2">
+                            Login
+                        </button>
+                        <button type="button" class="btn btn-warning">Sign-up</button>
                     </div>
                 </div>
             </div>
-    
-            <div class="text-center"> <!--- editar  -->
-            
-                <img src=
-                "img/qr-code-scan-hand.png"
-                class="qr-code img-thumbnail img-responsive" />
-            </div>
+        </header>
 
-          </div>           
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+
+                    <img src= "img/qr-code-scan-hand.png"
+                     class="qr-code img-thumbnail img-responsive" />
+                    <!-- <img src="img/laranja.png" class="d-block mx-lg-auto img-fluid" alt="QR CODE" width="700"
+                        height="500" loading="lazy" /> -->
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">QR Code</h1>
+                    <!-- <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, enim
+                        doloribus officia quisquam ducimus.
+                    </p> -->
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="entrada" for="content">
+                                <p>1. Cole o link e clique em <strong>Criar</strong>!</p>
+                                <p>2. Clique com botão esquerdo do mouse sobre o QRcode</p>
+                                <p>3. Selecione: <strong>Salvar imagem como</strong></p>
+                                
         
-        <!-- QR -->
-       
-         
-    </div>
+                            </label>
+                            <div class="">
+                    
+                            <input type="text" size="60" 
+                                maxlength="60" class="form-control"
+                                id="content" placeholder="Cole o link aqui" />
+                            </div>
+                        </div>
+        
+                       
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-    
+                        <button type="button" id="generate" class="btn-lg btn btn-outline-light me-2">
+                            Gerar
+                        </button>
 
-        <div class="info">
-            <h2>Crie um QR code em um clique</h2>   
-            <p>
-                <br>               
-
-                O QR Code é uma versão bidimensional do
-                 código de barras, 
-                composto de padrões de 
-                pixels em preto e branco.
-            </p>
-    
-            <p>
-                Se os QR codes ainda não 
-                fazem parte da sua estratégia de marketing, 
-                pode ser que você esteja ficando de fora. 
-                Use os códigos QR para atrair o interesse 
-                dos clientes e aumentar o tráfego e as vendas
-                pelo marketing impresso, virtual ou por e-mail.
-            </p>
-                              
+                        <button  type="button" class="btn btn-lg btn-warning">
+                            Default
+                        </button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
         </div>
 
-    
-    
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+    </main>
 
     
-    <footer class="fixar-rodape">
-        <a href="https://diegoroney.github.io/portfolio/" class="footer-link">© 2022 Copyright: DIEGOR</a>
 
-    </footer>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-        <script src="js/qrcode.js"></script>
-
-        <!--- less -->
     <script>
         less = {
           env: "development", //production
@@ -177,10 +133,8 @@
       <script src="less.js" data-env="development"></script>
       <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
       <!--- less js -->
-      <!--- js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script> <!-- jquery -->
+      <script src="js/qrcode.js"></script>
 </body>
-<script src="js/navbar.js"></script>
-<script type="text/javascript" src="js/confirmacao.js"></script>
-
+ 
 </html>
